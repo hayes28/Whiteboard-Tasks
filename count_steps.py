@@ -1,4 +1,4 @@
-# Climbing Stairs
+# Climbing Stairs Recursively
 
 def countWays(n):
     if n == 1:

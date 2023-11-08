@@ -28,10 +28,30 @@ def image_smoother(matrix):
     return smoothed
 
 # Test Cases - Image to be smoothed
+# 1. 3x3 matrix - can change the values to test
 original_matrix = [
-    [1, 1, 1],
-    [1, 0, 1],
-    [1, 1, 1]
+    [120, 140, 150],
+    [156, 0, 174],
+    [118, 192, 17]
 ]
+
+# 2. 4x4 matrix
+# original_matrix = [
+#     [120, 140, 150, 100],
+#     [156, 0, 174, 200],
+#     [118, 192, 17, 180],
+#     [100, 200, 150, 80]
+# ]
+
+# 3. 5x5 matrix
+# original_matrix = [
+#     [120, 140, 150, 100, 90],
+#     [156, 0, 174, 200, 120],
+#     [118, 192, 17, 180, 100],
+#     [100, 200, 150, 80, 120],
+#     [120, 140, 150, 100, 90]
+# ]
+
+# Call the function and print the result
 smoothed_matrix = image_smoother(original_matrix)
 print(smoothed_matrix)

@@ -10,7 +10,7 @@ def image_smoother(matrix):
     rows = len(matrix)
     cols = len(matrix[0])
     # Create a new matrix to store the smoothed values
-    smoothed = [[0 for i in range(cols)] for j in range(rows)]
+    smoothed = [[0 for r in range(cols)] for c in range(rows)]
     # Iterate through the matrix
     for r in range(rows):
         for c in range(cols):
@@ -30,9 +30,9 @@ def image_smoother(matrix):
 # Test Cases - Image to be smoothed
 # 1. 3x3 matrix - can change the values to test
 original_matrix = [
-    [120, 140, 150],
-    [156, 0, 174],
-    [118, 192, 17]
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 1, 1]
 ]
 
 # 2. 4x4 matrix
